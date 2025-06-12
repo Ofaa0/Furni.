@@ -1,0 +1,30 @@
+user
+<i class="ri-user-line"></i>
+
+cart
+<i class="ri-shopping-cart-line"></i>
+
+location
+<i class="ri-map-pin-2-fill"></i>
+
+emaile
+<i class="ri-mail-line"></i>
+<i class="ri-mail-fill"></i>
+
+phone
+<i class="ri-phone-fill"></i>
+
+paper
+<i class="ri-send-plane-fill"></i>
+
+face
+<i class="ri-facebook-fill"></i>
+
+twi
+<i class="ri-twitter-fill"></i>
+
+insta
+<i class="ri-instagram-line"></i>
+
+linked
+<i class="ri-linkedin-box-fill"></i>

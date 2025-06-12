@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --main-color: #3b5d50;
+  --text-color: #2f2f2f;
+  --section-color: #eff2f1;
+  --icons-bg-color: #dce5e4;
+  --yellow-color: #f9bf29;
+  --web--font: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: var(--web--font);
+  color: var(--text-color);
+}
+
+#heading-page {
+  background-color: var(--main-color);
+  padding: 98px 0 128px;
+  h1 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+#product-section {
+  padding: 114px 0 200px !important;
+  width: 100%;
+  .container {
+    .product-cards {
+      row-gap: 5rem;
+      a {
+        text-decoration: none;
+        width: calc((100% - 1rem) / 4) !important;
+        display: block;
+         @media screen and (max-width: 767px) {
+          width: 100% !important;
+          margin-bottom: 48px;
+        }
+      }
+    }
+  }
+}

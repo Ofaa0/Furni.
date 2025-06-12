@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --main-color: #3b5d50;
+  --text-color: #2f2f2f;
+  --section-color: #eff2f1;
+  --icons-bg-color: #dce5e4;
+  --yellow-color: #f9bf29;
+  --web--font: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: var(--web--font);
+  color: var(--text-color);
+}
+
+#contact {
+  padding: 112px 0;
+  .container {
+    display: grid;
+    place-items: center;
+    .icons-cards {
+      margin-bottom: 48px;
+      width: 65%;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        align-items: flex-start;
+      }
+      .icons-card {
+        width: calc((100% - 1rem) / 3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+          p {
+            width: 100%;
+          }
+          .first-p {
+            width: 100% !important;
+          }
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 13px 18px;
+          margin-right: 20px;
+          border-radius: 10px;
+          background-color: var(--main-color);
+          i {
+            color: #fff;
+          }
+        }
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          color: #6a6a6a;
+          margin-bottom: 0;
+        }
+        .first-p{
+            width: 150px;
+        }
+        
+      }
+    }
+    input {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 6px 12px;
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid #c4c2c2;
+      display: block;
+      width: 100%;
+    }
+    form {
+      width: 65%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      .line-1-inputs {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label {
+          width: calc((100% - 24px) / 2) !important;
+          font-size: 14px;
+          line-height: 28px;
+          color: #000;
+        }
+      }
+      label {
+        color: #000;
+        width: 100%;
+        font-size: 14px;
+        line-height: 28px;
+        textarea {
+          width: 100%;
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 6px 12px;
+          border: 1px solid #c4c2c2;
+          margin-bottom: 48px;
+        }
+      }
+      button {
+        width: fit-content !important;
+      }
+    }
+  }
+}

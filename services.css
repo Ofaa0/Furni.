@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --main-color: #3b5d50;
+  --text-color: #2f2f2f;
+  --section-color: #eff2f1;
+  --icons-bg-color: #dce5e4;
+  --yellow-color: #f9bf29;
+  --web--font: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: var(--web--font);
+  color: var(--text-color);
+}
+#services {
+  padding: 112px 0;
+  .container {
+    .why-cards {
+      .why-card {
+        width: calc((100% - 1rem) / 4);
+        @media screen and (max-width: 767px) {
+          width: calc((100% - 1rem) / 2);
+        }
+        h3 {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        p {
+          color: #6a6a6a;
+        }
+        .icon {
+          position: relative;
+          margin-bottom: 20px;
+          i {
+            font-size: 40px;
+          }
+          span {
+            background-color: #cbd5d1;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 8px;
+            left: 20px;
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
+}
