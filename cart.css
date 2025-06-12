@@ -110,6 +110,9 @@
             margin-right: 24px;
             margin-top: 10px;
             margin-bottom: 20px;
+            @media screen and (max-width: 767px) {
+              margin-right: 0;
+            }
           }
           button {
             padding: 12px 30px !important;
