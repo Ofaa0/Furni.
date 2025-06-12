@@ -49,6 +49,9 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: var(--section-color);
+  @media screen and (max-width: 767px) {
+    overflow-x: hidden;
+ }
 
   header {
     background-color: var(--main-color);
@@ -189,6 +192,9 @@ body {
     }
   }
   #hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: var(--main-color);
     min-height: 80vh;
@@ -461,6 +467,7 @@ body {
     }
   }
   #we-help-section {
+    width: 100%;
     padding: 114px 0 0;
     .container {
       .we-help-sec {
@@ -477,6 +484,7 @@ body {
           align-self: flex-start;
           @media screen and (max-width: 767px) {
             padding-left: 0;
+            width: 360px;
             /* margin-top: 120px; */
           }
           h2 {
@@ -490,6 +498,13 @@ body {
           ul {
             padding-left: 15px !important;
             list-style-type: circle;
+            /* @media screen and (max-width: 767px) {
+              justify-content: flex-start !important;
+              li{
+                width: 140px !important;
+              }
+            } */
+
             li {
               font-size: 14px;
               color: #6a6a6a;
@@ -681,7 +696,7 @@ body {
           display: block;
           text-align: left;
           font-weight: 700;
-          &:hover{
+          &:hover {
             text-decoration: none;
           }
           @media screen and (max-width: 767px) {
