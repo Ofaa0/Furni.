@@ -50,6 +50,9 @@
                 cursor: pointer;
               }
             }
+            .num{
+              padding: 30px 15px;
+            }
             th {
               width: 160px;
               height: 160px;
