@@ -484,7 +484,7 @@ body {
           align-self: flex-start;
           @media screen and (max-width: 767px) {
             padding-left: 0;
-            width: 360px;
+            width: 100%;
             /* margin-top: 120px; */
           }
           h2 {
@@ -760,7 +760,7 @@ body {
       }
       .newsletter {
         @media screen and (max-width: 767px) {
-          padding-top: 90px;
+          padding-top: 110px;
         }
         h3 {
           font-size: 18px;
@@ -780,6 +780,10 @@ body {
           border-radius: 10px;
           outline: 0;
           border: 1px solid #aaaaaa;
+          @media screen and (max-width: 767px) {
+          /* padding-top: 110px; */
+          width: calc(inherit - 20px) !important;
+        }
         }
         input::placeholder {
           color: #6a6a6a;
